@@ -1,17 +1,20 @@
 @font-face {
-    font-family: testfont;
+    font-family: mluvka-regular;
     src: url("Mluvka-Regular-BF65518ac8463f5.otf") format("opentype");
-    font-family: otherfont;
+}
+
+@font-face {
+    font-family: mluvka-extra-bold;
     src: url("Mluvka-ExtraBold-BF65518ac86bc69.otf") format("opentype");
 }
 
 * {
-    font-family: "testfont";
+    font-family: "mluvka-regular";
     /* pointer-events: none; */
 
 }
-h1 {
-    font-family: "otherfont";
+h1, h2, h3, h4, h5, h6 {
+    font-family: "mluvka-extra-bold";
     color: white;
 }
 .logo{
@@ -29,8 +32,9 @@ body {
     align-items: center;
 }
 a {
-    color: blue;
-    text-decoration: none; /* no underline */
+    color: white;
+    font-family: "mluvka-regular";
+    text-decoration: none;
 }
 header {
     display: flex;
@@ -42,8 +46,14 @@ header {
 }
 .nav-bar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
+}
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
